@@ -260,22 +260,6 @@ export function SummaryView({
         </div>
       </div>
 
-      {/* Portfolio Events Card */}
-      <div className="card events-card">
-        <div className="card-header">
-          <h3 className="card-title">Portfolio events</h3>
-          <button className="info-btn">
-            <svg viewBox="0 0 24 24" width="18" height="18">
-              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeWidth="2"/>
-              <path fill="currentColor" d="M11 7h2v2h-2zm0 4h2v6h-2z"/>
-            </svg>
-          </button>
-        </div>
-        <div className="events-empty">
-          <p>No upcoming events</p>
-        </div>
-      </div>
-
       {/* Top Movers Card */}
       <div className="card movers-card">
         <h3 className="card-title">Your top and bottom movers</h3>

@@ -140,7 +140,7 @@ export function ActivityView({ transactions }: ActivityViewProps) {
       <div className="activity-header">
         <div className="activity-title">
           <h2>Activity & Orders</h2>
-          <span className="account-number">Z25424500</span>
+          <span className="account-number">DEMO001</span>
         </div>
         <div className="activity-stats">
           <div className="stat-item">

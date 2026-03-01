@@ -347,7 +347,7 @@ export function ImportView({ currentPositions, currentTransactions, onDataImport
     ];
     
     const positionsRows = positions.map(p => [
-      'Z25424500',
+      'DEMO001',
       'Growth Portfolio',
       p.symbol,
       p.description,

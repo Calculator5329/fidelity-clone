@@ -92,7 +92,7 @@ export function StockOverviewView({ symbol, positions, transactions, onBack }: S
         }
 
         // Load thesis data
-        const thesisResponse = await fetch('/data/stock_thesis.json');
+        const thesisResponse = await fetch('/data/stock_thesis.json?v=2');
         if (thesisResponse.ok) {
           const allThesis = await thesisResponse.json();
           if (allThesis[symbol]) {
@@ -101,7 +101,7 @@ export function StockOverviewView({ symbol, positions, transactions, onBack }: S
         }
 
         // Load fair value history from JSON first
-        const fvResponse = await fetch('/data/fair_value_history.json');
+        const fvResponse = await fetch('/data/fair_value_history.json?v=2');
         let baseFairValue: StockFairValueData | null = null;
         if (fvResponse.ok) {
           const allFairValue = await fvResponse.json();

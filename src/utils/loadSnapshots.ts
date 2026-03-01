@@ -45,7 +45,7 @@ export async function loadDailySnapshots(): Promise<PortfolioSnapshots> {
   }
 
   try {
-    const response = await fetch('/data/daily_portfolio_snapshots.json');
+    const response = await fetch('/data/daily_portfolio_snapshots.json?v=2');
     if (!response.ok) {
       throw new Error(`Failed to load snapshots: ${response.status}`);
     }

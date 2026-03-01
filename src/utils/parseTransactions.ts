@@ -55,7 +55,7 @@ export interface PortfolioData {
  */
 export async function loadTransactionsJSON(_accountId?: string): Promise<TransactionsData | null> {
   try {
-    const response = await fetch('/data/transactions.json');
+    const response = await fetch('/data/transactions.json?v=2');
     if (!response.ok) return null;
     const data: TransactionsData = await response.json();
     return data;
@@ -70,7 +70,7 @@ export async function loadTransactionsJSON(_accountId?: string): Promise<Transac
  */
 export async function loadPositionsJSON(): Promise<PositionsData | null> {
   try {
-    const response = await fetch('/data/positions.json');
+    const response = await fetch('/data/positions.json?v=2');
     if (!response.ok) return null;
     const data: PositionsData = await response.json();
     return data;
@@ -148,7 +148,7 @@ export function convertToLegacyPosition(pos: NewPosition): Position {
 /**
  * Load portfolio data from new JSON format, with fallback to CSV
  */
-export async function loadPortfolioDataFromJSON(accountId: string = 'Z25424500'): Promise<PortfolioData | null> {
+export async function loadPortfolioDataFromJSON(accountId: string = 'DEMO001'): Promise<PortfolioData | null> {
   try {
     // Try loading from JSON first
     const [transactionsData, positionsData] = await Promise.all([
@@ -557,8 +557,8 @@ const monthlyTWRRData: { month: string; return: number }[] = [
   { month: '2025-12', return: -1.04 },
 ];
 
-// Current portfolio value (end of Dec 2025)
-const CURRENT_VALUE = 61694.25;
+// Current portfolio value (end of Jan 2026)
+const CURRENT_VALUE = 25397.79;
 
 /**
  * Load pre-generated daily portfolio values from JSON file
@@ -566,7 +566,7 @@ const CURRENT_VALUE = 61694.25;
  */
 export async function loadDailyPortfolioValues(): Promise<{ date: string; value: number }[]> {
   try {
-    const response = await fetch('/data/daily_portfolio_values.json');
+    const response = await fetch('/data/daily_portfolio_values.json?v=2');
     if (!response.ok) {
       console.warn('Daily portfolio values not found, falling back to monthly data');
       return [];
@@ -965,7 +965,7 @@ export function extractDeposits(transactions: Transaction[]): Deposit[] {
  */
 export async function loadVTIPrices(): Promise<VTIPrice[]> {
   try {
-    const response = await fetch('/data/vti_prices.json');
+    const response = await fetch('/data/vti_prices.json?v=2');
     if (!response.ok) {
       console.warn('VTI prices not found');
       return [];

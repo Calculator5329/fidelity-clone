@@ -9,7 +9,6 @@ import { StockOverviewView } from './components/StockOverviewView';
 import { ChartsView } from './components/ChartsView';
 import { HistoryView } from './components/HistoryView';
 import { ImportView } from './components/ImportView';
-import { DocumentsView } from './components/DocumentsView';
 import { 
   parseCSV, 
   parsePositionsCSV, 
@@ -276,10 +275,7 @@ function App() {
                     onDataImported={handleDataImported}
                   />
                 )}
-                {activeTab === 'documents' && (
-                  <DocumentsView />
-                )}
-                {activeTab !== 'summary' && activeTab !== 'positions' && activeTab !== 'activity' && activeTab !== 'stock' && activeTab !== 'charts' && activeTab !== 'history' && activeTab !== 'import' && activeTab !== 'documents' && (
+                {activeTab !== 'summary' && activeTab !== 'positions' && activeTab !== 'activity' && activeTab !== 'stock' && activeTab !== 'charts' && activeTab !== 'history' && activeTab !== 'import' && (
                   <div className="coming-soon">
                     <h2>Coming Soon</h2>
                     <p>This section is under development.</p>

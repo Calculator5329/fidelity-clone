@@ -1,6 +1,6 @@
 import './TabNav.css';
 
-export type TabId = 'summary' | 'positions' | 'activity' | 'charts' | 'history' | 'balances' | 'documents' | 'planning' | 'more' | 'stock' | 'import';
+export type TabId = 'summary' | 'positions' | 'activity' | 'charts' | 'history' | 'balances' | 'planning' | 'more' | 'stock' | 'import';
 
 interface Tab {
   id: TabId;
@@ -15,7 +15,6 @@ const staticTabs: Tab[] = [
   { id: 'charts', label: 'Charts' },
   { id: 'history', label: 'History' },
   { id: 'balances', label: 'Balances' },
-  { id: 'documents', label: 'Documents' },
   { id: 'planning', label: 'Planning' },
   { id: 'import', label: 'Import Data' },
   { id: 'more', label: 'More (4)' },
