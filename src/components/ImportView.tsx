@@ -135,7 +135,7 @@ export function ImportView({ currentPositions, currentTransactions, onDataImport
             
             resolve(positions);
           },
-          error: (err) => reject(err),
+          error: (err: Error) => reject(err),
         });
       };
       reader.onerror = () => reject(new Error('Failed to read file'));
@@ -201,7 +201,7 @@ export function ImportView({ currentPositions, currentTransactions, onDataImport
             
             resolve(transactions);
           },
-          error: (err) => reject(err),
+          error: (err: Error) => reject(err),
         });
       };
       reader.onerror = () => reject(new Error('Failed to read file'));

@@ -166,7 +166,7 @@ export function SummaryView({
                 onChange={(e) => setShowVTIComparison(e.target.checked)}
               />
               Compare to VTI (Total Stock Market)
-              <svg className="vti-info-icon" viewBox="0 0 24 24" title="Shows what your portfolio would be worth if you invested the same amounts into VTI instead">
+              <svg className="vti-info-icon" viewBox="0 0 24 24" aria-label="Shows what your portfolio would be worth if you invested the same amounts into VTI instead">
                 <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeWidth="2"/>
                 <path fill="currentColor" d="M11 7h2v2h-2zm0 4h2v6h-2z"/>
               </svg>

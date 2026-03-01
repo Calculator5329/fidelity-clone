@@ -53,7 +53,7 @@ export interface PortfolioData {
 /**
  * Load transactions from the new unified JSON format
  */
-export async function loadTransactionsJSON(accountId?: string): Promise<TransactionsData | null> {
+export async function loadTransactionsJSON(_accountId?: string): Promise<TransactionsData | null> {
   try {
     const response = await fetch('/data/transactions.json');
     if (!response.ok) return null;
@@ -206,7 +206,7 @@ export async function loadAllAccountsData(): Promise<PortfolioData | null> {
     const allTransactions: Transaction[] = [];
     
     // Get positions from each account's latest snapshot
-    for (const [accountId, accountData] of Object.entries(positionsData.snapshots)) {
+    for (const [_accountId, accountData] of Object.entries(positionsData.snapshots)) {
       const latestSnapshot = accountData.history[0]; // History sorted newest first
       if (latestSnapshot) {
         for (const pos of latestSnapshot.positions) {
@@ -237,7 +237,7 @@ export async function loadAllAccountsData(): Promise<PortfolioData | null> {
     }
     
     // Get transactions from all accounts
-    for (const [accountId, accountData] of Object.entries(transactionsData.accounts)) {
+    for (const [_accountId, accountData] of Object.entries(transactionsData.accounts)) {
       for (const tx of accountData.transactions) {
         allTransactions.push(convertToLegacyTransaction(tx));
       }
@@ -388,7 +388,7 @@ export async function parsePositionsCSV(csvPath: string): Promise<Position[]> {
         
         resolve(positions);
       },
-      error: (error) => reject(error),
+      error: (error: Error) => reject(error),
     });
   });
 }
@@ -450,7 +450,7 @@ export async function parseCSV(csvPath: string): Promise<Transaction[]> {
         
         resolve(transactions);
       },
-      error: (error) => reject(error),
+      error: (error: Error) => reject(error),
     });
   });
 }

@@ -295,7 +295,7 @@ export function ChartsView({ positions, transactions, totalValue }: ChartsViewPr
         gainDollar: p.totalGainDollar,
         gainPercent: p.totalGainPercent,
       }))
-      .sort((a, b) => b.gainDollar - a.gainDollar);
+      .sort((a, b) => (b.gainDollar ?? 0) - (a.gainDollar ?? 0));
   }, [positions, allocationFilter]);
 
   // Prepare monthly returns for calendar heatmap
@@ -480,7 +480,7 @@ export function ChartsView({ positions, transactions, totalValue }: ChartsViewPr
                   <ReferenceLine x={0} stroke="#666" />
                   <Tooltip 
                     contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #333', borderRadius: 4 }}
-                    formatter={(value: number) => [`$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}`, 'Gain/Loss']}
+                    formatter={(value) => [typeof value === 'number' ? `$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}` : '$0', 'Gain/Loss' as const]}
                     labelFormatter={(label) => label}
                   />
                   <Bar 
@@ -491,7 +491,7 @@ export function ChartsView({ positions, transactions, totalValue }: ChartsViewPr
                     {gainLossData.map((entry, index) => (
                       <Cell 
                         key={`cell-${index}`} 
-                        fill={entry.gainDollar >= 0 ? '#4caf50' : '#ef5350'} 
+                        fill={(entry.gainDollar ?? 0) >= 0 ? '#4caf50' : '#ef5350'} 
                       />
                     ))}
                   </Bar>
@@ -582,7 +582,7 @@ export function ChartsView({ positions, transactions, totalValue }: ChartsViewPr
                 />
                 <Tooltip 
                   contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #333', borderRadius: 4 }}
-                  formatter={(value: number) => [`$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}`, 'Total Contributed']}
+                  formatter={(value) => [typeof value === 'number' ? `$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}` : '$0', 'Total Contributed' as const]}
                   labelFormatter={(label) => {
                     const [year, month] = label.split('-');
                     return `${monthNames[parseInt(month) - 1]} ${year}`;
@@ -753,10 +753,11 @@ export function ChartsView({ positions, transactions, totalValue }: ChartsViewPr
                     />
                     <Tooltip 
                       contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #333', borderRadius: 4 }}
-                      formatter={(value: number, name: string) => {
-                        if (name === 'marketValue') return [`$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}`, 'Market Value'];
-                        if (name === 'costBasis') return [`$${value.toLocaleString('en-US', { minimumFractionDigits: 2 })}`, 'Cost Basis'];
-                        return [`${value.toFixed(1)}%`, 'Allocation'];
+                      formatter={(value, name) => {
+                        const v = typeof value === 'number' ? value : 0;
+                        if (name === 'marketValue') return [`$${v.toLocaleString('en-US', { minimumFractionDigits: 2 })}`, 'Market Value' as const];
+                        if (name === 'costBasis') return [`$${v.toLocaleString('en-US', { minimumFractionDigits: 2 })}`, 'Cost Basis' as const];
+                        return [`${v.toFixed(1)}%`, 'Allocation' as const];
                       }}
                       labelFormatter={(label) => label}
                     />
@@ -814,7 +815,7 @@ export function ChartsView({ positions, transactions, totalValue }: ChartsViewPr
                       />
                       <Tooltip 
                         contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #333', borderRadius: 4 }}
-                        formatter={(value: number, name: string) => [`${value.toFixed(1)}%`, name]}
+                        formatter={(value, name) => [typeof value === 'number' ? `${value.toFixed(1)}%` : '0%', String(name)]}
                         labelFormatter={(label) => label}
                       />
                       {allocationOverTimeData.symbols.map((symbol, index) => (
@@ -918,13 +919,14 @@ export function ChartsView({ positions, transactions, totalValue }: ChartsViewPr
                   />
                   <Tooltip 
                     contentStyle={{ backgroundColor: '#1a1a1a', border: '1px solid #333', borderRadius: 4 }}
-                    formatter={(value: number, name: string) => {
+                    formatter={(value, name) => {
                       const labels: Record<string, string> = {
                         topPosition: 'Top Position',
                         top3: 'Top 3 Positions',
                         top5: 'Top 5 Positions',
                       };
-                      return [`${value.toFixed(1)}%`, labels[name] || name];
+                      const n = String(name);
+                      return [typeof value === 'number' ? `${value.toFixed(1)}%` : '0%', labels[n] || n];
                     }}
                     labelFormatter={(label) => label}
                   />

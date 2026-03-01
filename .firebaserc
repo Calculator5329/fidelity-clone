@@ -1,0 +1,12 @@
+{
+  "projects": {
+    "default": "master-site-92392"
+  },
+  "targets": {
+    "master-site-92392": {
+      "hosting": {
+        "fidelity-portfolio": ["fidelity-portfolio-d5ea8"]
+      }
+    }
+  }
+}

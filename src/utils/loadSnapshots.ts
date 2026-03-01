@@ -408,7 +408,7 @@ export function getPillarStocks(
 export function getTopStocks(
   transactions: Transaction[],
   snapshots?: PortfolioSnapshots,
-  startDate: string = PORTFOLIO_START_DATE
+  _startDate: string = PORTFOLIO_START_DATE
 ): string[] {
   if (!snapshots || snapshots.snapshots.length === 0) {
     return [];

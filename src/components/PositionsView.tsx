@@ -374,7 +374,6 @@ export function PositionsView({
                       {sellTransactions.reduce((sum, s) => sum + s.realizedGain, 0).toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
                     </td>
                     <td className={`align-right ${(() => {
-                      const totalCost = sellTransactions.reduce((sum, s) => sum + s.costBasis, 0);
                       const totalGain = sellTransactions.reduce((sum, s) => sum + s.realizedGain, 0);
                       return totalGain >= 0 ? 'positive' : 'negative';
                     })()}`}>

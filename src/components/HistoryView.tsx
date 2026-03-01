@@ -6,7 +6,6 @@ import {
   getWorstDays,
   formatSnapshotDate,
   type PortfolioSnapshots,
-  type DailySnapshot,
 } from '../utils/loadSnapshots';
 import './HistoryView.css';
 

@@ -115,7 +115,7 @@ export function TWRRChart() {
                 borderRadius: '4px',
                 color: '#fff',
               }}
-              formatter={(value: number) => [`${value >= 0 ? '+' : ''}${value.toFixed(2)}%`, 'Cumulative Return']}
+              formatter={(value) => [typeof value === 'number' ? `${value >= 0 ? '+' : ''}${value.toFixed(2)}%` : '0%', 'Cumulative Return' as const]}
               labelFormatter={(label) => formatMonth(label)}
             />
             <Area 

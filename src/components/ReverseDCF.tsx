@@ -23,7 +23,7 @@ const DEFAULT_INPUTS: DCFInputs = {
   buybackYield: 0,
 };
 
-export function ReverseDCF({ symbol, currentPrice, initialInputs, fairValueHistory, onSave }: ReverseDCFProps) {
+export function ReverseDCF({ symbol: _symbol, currentPrice, initialInputs, fairValueHistory, onSave }: ReverseDCFProps) {
   const [inputs, setInputs] = useState<DCFInputs>(initialInputs || DEFAULT_INPUTS);
   const [showHistory, setShowHistory] = useState(false);
   const [saveStatus, setSaveStatus] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');

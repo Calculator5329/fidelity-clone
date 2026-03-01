@@ -5,6 +5,7 @@ interface AllocationData {
   name: string;
   value: number;
   color: string;
+  [key: string]: string | number;
 }
 
 const allocationData: AllocationData[] = [
