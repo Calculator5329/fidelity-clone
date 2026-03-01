@@ -1,62 +1,18 @@
 {
-  "META": {
-    "thesis": "Meta Platforms represents a compelling investment opportunity as the dominant player in social media with Facebook, Instagram, and WhatsApp reaching over 3 billion daily active users. The company's aggressive pivot to AI and efficiency has dramatically improved margins, with 2024 being dubbed the 'Year of Efficiency.'\n\nThe Reality Labs segment, while currently a drag on earnings, positions Meta for long-term leadership in the metaverse and AR/VR computing platforms. The Quest headset line continues to gain traction, and the company's AI investments are driving engagement and ad targeting improvements.\n\nKey risks include regulatory scrutiny, competition from TikTok, and the capital-intensive nature of Reality Labs. However, the core advertising business remains highly profitable with strong network effects.",
+  "AAPL": {
+    "thesis": "Apple remains one of the most profitable businesses ever built, with an ecosystem of hardware, software, and services that creates exceptional customer retention. The iPhone continues to generate enormous cash flows that fund buybacks and dividends. Services revenue (App Store, iCloud, Apple TV+, Apple Pay) is growing faster than hardware and commands higher margins. The Vision Pro represents Apple's bet on spatial computing, following their playbook of entering markets late but with a superior product. The company consistently returns capital to shareholders and has reduced share count significantly over the past decade.",
     "lastUpdated": "2025-12-01"
   },
-  "GOOGL": {
-    "thesis": "Alphabet remains the dominant force in digital advertising through Google Search and YouTube, with an unassailable moat in search. The company's AI capabilities, particularly Gemini, position it well for the next computing paradigm shift.\n\nGoogle Cloud continues to grow rapidly and is approaching profitability, providing a diversified revenue stream. The company's 'Other Bets' segment includes moonshot projects like Waymo, which leads in autonomous driving.\n\nConcerns around AI disruption to search are valid but likely overstated - Google has the data, talent, and distribution to maintain leadership. The stock trades at a reasonable multiple given the growth profile.",
+  "MSFT": {
+    "thesis": "Microsoft's transformation under Satya Nadella from a legacy software company to a cloud-first AI leader is one of the most impressive pivots in corporate history. Azure is the #2 cloud provider and growing faster than Amazon Web Services. Copilot AI integration across the Office 365 suite creates a compelling upsell opportunity across 300M+ commercial seats. The Activision acquisition adds gaming scale. LinkedIn remains a dominant professional network with strong monetization. The balance sheet is fortress-like, supporting continued R&D investment and shareholder returns.",
     "lastUpdated": "2025-11-15"
   },
-  "AMZN": {
-    "thesis": "Amazon Web Services (AWS) remains the crown jewel, generating the majority of operating income with a dominant position in cloud computing. The retail business has reached a scale that competitors cannot match, with logistics infrastructure that would cost hundreds of billions to replicate.\n\nThe advertising business has emerged as a major profit driver, leveraging Amazon's unique position at the point of purchase. Prime membership creates recurring revenue and customer lock-in.\n\nMargins are expanding as the company moves past the heavy investment phase. International retail losses are narrowing, and the company is showing improved capital discipline.",
-    "lastUpdated": "2025-10-20"
-  },
-  "PYPL": {
-    "thesis": "PayPal is undergoing a turnaround under new leadership, focusing on profitable growth over market share at any cost. The Braintree business provides processing for major merchants, while Venmo has significant untapped monetization potential.\n\nThe stock trades at a depressed multiple following years of underperformance, creating an attractive risk/reward setup. The company is buying back significant shares and improving operating margins.\n\nRisks include competition from Apple Pay, buy-now-pay-later alternatives, and the need to re-accelerate growth in the branded checkout experience.",
-    "lastUpdated": "2025-12-10"
-  },
-  "TXRH": {
-    "thesis": "Texas Roadhouse is a best-in-class casual dining operator with a unique culture and operational excellence. The company consistently takes market share from competitors while maintaining industry-leading unit economics.\n\nThe 'made from scratch' menu and generous portions create strong value perception. Employee ownership and development programs result in low turnover and excellent service.\n\nNew store openings continue with strong returns on invested capital. The company has minimal debt and returns cash to shareholders through dividends and buybacks.",
-    "lastUpdated": "2025-09-15"
-  },
-  "DUOL": {
-    "thesis": "Duolingo has created the most engaging and effective language learning app, with gamification mechanics that drive daily active usage. The freemium model converts users to subscribers at attractive rates, with high retention.\n\nThe company is expanding beyond language learning into math and music education, increasing the total addressable market. AI integration is improving the learning experience and operational efficiency.\n\nStrong network effects from user-generated content and community features create a moat. The company is approaching profitability with a long runway for subscriber growth.",
-    "lastUpdated": "2025-11-01"
-  },
-  "AMD": {
-    "thesis": "AMD has executed one of the greatest turnarounds in semiconductor history under Lisa Su's leadership. The company now competes effectively with Intel in CPUs and is taking market share across server, desktop, and mobile.\n\nThe data center GPU opportunity is massive as AI training and inference demand explodes. AMD's MI300 series is competitive with NVIDIA in many workloads at attractive price points.\n\nThe Xilinx acquisition adds FPGA capabilities for edge AI applications. Gaming console wins provide stable revenue. The company has a strong balance sheet and improving margins.",
+  "NVDA": {
+    "thesis": "NVIDIA has emerged as the defining infrastructure company of the AI era. Their H100 and B100 GPUs are the de facto standard for AI training workloads, and demand continues to vastly outpace supply. The CUDA software ecosystem creates an enormous switching cost — AI researchers and companies have years of code written for NVIDIA hardware. Data center revenue has grown from negligible to the majority of revenues in just a few years. The automotive and robotics segments represent large optionality. The main risk is competition from AMD, Google TPUs, and custom chips from hyperscalers — but NVIDIA's software moat remains underappreciated.",
     "lastUpdated": "2025-10-05"
   },
-  "ASML": {
-    "thesis": "ASML holds a complete monopoly on EUV lithography machines, which are required to manufacture the most advanced semiconductors. This is arguably the most defensible moat in technology.\n\nChips are becoming more complex, requiring more lithography steps and driving increased demand for ASML's equipment. The company has a massive backlog extending years into the future.\n\nGeopolitical tensions around semiconductor supply chains actually benefit ASML as nations invest in domestic chip production. The stock is expensive but the quality justifies a premium multiple.",
-    "lastUpdated": "2025-08-20"
-  },
-  "MELI": {
-    "thesis": "MercadoLibre is the dominant e-commerce and fintech platform in Latin America, often called the 'Amazon plus Square of LatAm.' The company benefits from rising internet penetration and a growing middle class.\n\nMercado Pago has expanded beyond marketplace payments into a full financial services ecosystem including credit, insurance, and asset management. This creates multiple growth vectors and sticky customer relationships.\n\nThe logistics network (Mercado Envios) provides a competitive moat and improves customer experience. Currency and political volatility are ongoing risks but the company has navigated them successfully.",
-    "lastUpdated": "2025-07-10"
-  },
-  "NKE": {
-    "thesis": "Nike is a turnaround situation after several years of strategic missteps. The brand remains iconic and globally recognized, with no true competitor at scale across all footwear and apparel categories.\n\nNew leadership is refocusing on wholesale relationships, innovation pipeline, and sportswear/running categories where Nike has historically dominated. The Olympics and major sporting events provide marketing catalysts.\n\nValuation has compressed significantly, creating an attractive entry point if the turnaround succeeds. DTC strategy is being recalibrated to complement rather than replace wholesale.",
-    "lastUpdated": "2025-12-15"
-  },
-  "ADBE": {
-    "thesis": "Adobe's Creative Cloud is the industry standard for creative professionals, with strong switching costs and network effects. The subscription model provides recurring revenue and predictable cash flows.\n\nThe Document Cloud (Acrobat/PDF) business is an underappreciated asset with steady growth. The Experience Cloud provides marketing and analytics tools for enterprises.\n\nAI integration through Firefly is an opportunity rather than a threat - Adobe is embedding generative AI into its products to increase utility and pricing power. The Figma acquisition falling through was initially seen as a negative but preserves capital optionality.",
-    "lastUpdated": "2025-11-20"
-  },
-  "CRM": {
-    "thesis": "Salesforce is the dominant CRM platform with deep enterprise relationships and a broad ecosystem of integrated products (Sales, Service, Marketing, Commerce, Platform).\n\nThe company has shifted focus from growth-at-all-costs to profitable growth and margin expansion, which is being rewarded by the market. AI integration through Einstein and Slack provides productivity improvements.\n\nActivist investor involvement has improved capital allocation discipline. The company is generating significant free cash flow and returning cash to shareholders through buybacks and a new dividend.",
-    "lastUpdated": "2025-09-30"
-  },
-  "MA": {
-    "thesis": "Mastercard operates a duopoly with Visa in payment networks, benefiting from the secular shift from cash to electronic payments. The business model is asset-light with high margins and strong network effects.\n\nCross-border transactions provide higher margins and are growing as international travel recovers. New payment flows (B2B, P2P, government disbursements) expand the TAM beyond consumer card payments.\n\nThe company has pricing power and inflation is actually a tailwind as transaction values increase. Regulatory and fintech disruption risks are overblown given the network's entrenched position.",
-    "lastUpdated": "2025-08-15"
-  },
-  "CELH": {
-    "thesis": "Celsius is taking market share in the energy drink category dominated by Monster and Red Bull, positioning as a healthier alternative with functional ingredients and no artificial preservatives.\n\nThe Pepsi distribution partnership dramatically expanded retail availability and velocity. The brand resonates with health-conscious consumers and the fitness community.\n\nThe stock has pulled back significantly from highs, creating a better entry point. Key risks include the highly competitive beverage industry and the need to maintain brand heat.",
-    "lastUpdated": "2025-12-01"
-  },
-  "SOFI": {
-    "thesis": "SoFi is building a comprehensive digital financial services platform with banking, lending, and investing products. The bank charter acquisition provides a significant cost of capital advantage.\n\nThe Galileo and Technisys platforms provide B2B infrastructure serving other fintechs, creating diversified revenue streams. Student loan refinancing should benefit when the payment pause ends.\n\nThe company is approaching GAAP profitability with improving unit economics. The one-app approach for all financial services could create strong customer lifetime value.",
-    "lastUpdated": "2025-10-10"
+  "TSLA": {
+    "thesis": "Tesla is best understood as an AI and energy company that manufactures cars, not a traditional automaker. Full Self-Driving (FSD) subscriptions could become a massive recurring revenue stream if achieved at scale. The Supercharger network has become an industry standard, with Ford and GM adopting the NACS connector. Energy storage (Megapack) is growing rapidly as utilities invest in grid stabilization. The valuation remains high relative to current auto margins, requiring execution on FSD, Optimus robotaxi, and energy to justify. Elon Musk's attention across multiple companies is a key risk to monitor.",
+    "lastUpdated": "2025-12-10"
   }
 }
