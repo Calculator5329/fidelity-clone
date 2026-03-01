@@ -1,0 +1,153 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-01-10T23:44:48.146Z",
+  "reports": [
+    {
+      "id": "2023-Q1",
+      "type": "quarterly",
+      "year": 2023,
+      "quarter": 1,
+      "title": "Q1 2023",
+      "filename": "2023-Q1.html",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-03-31"
+    },
+    {
+      "id": "2023-Q2",
+      "type": "quarterly",
+      "year": 2023,
+      "quarter": 2,
+      "title": "Q2 2023",
+      "filename": "2023-Q2.html",
+      "periodStart": "2023-04-01",
+      "periodEnd": "2023-06-30"
+    },
+    {
+      "id": "2023-Q3",
+      "type": "quarterly",
+      "year": 2023,
+      "quarter": 3,
+      "title": "Q3 2023",
+      "filename": "2023-Q3.html",
+      "periodStart": "2023-07-01",
+      "periodEnd": "2023-09-30"
+    },
+    {
+      "id": "2023-Q4",
+      "type": "quarterly",
+      "year": 2023,
+      "quarter": 4,
+      "title": "Q4 2023",
+      "filename": "2023-Q4.html",
+      "periodStart": "2023-10-01",
+      "periodEnd": "2023-12-31"
+    },
+    {
+      "id": "2023-annual",
+      "type": "annual",
+      "year": 2023,
+      "title": "2023 Annual Report",
+      "filename": "2023-annual.html",
+      "periodStart": "2023-01-01",
+      "periodEnd": "2023-12-31"
+    },
+    {
+      "id": "2024-Q1",
+      "type": "quarterly",
+      "year": 2024,
+      "quarter": 1,
+      "title": "Q1 2024",
+      "filename": "2024-Q1.html",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-03-31"
+    },
+    {
+      "id": "2024-Q2",
+      "type": "quarterly",
+      "year": 2024,
+      "quarter": 2,
+      "title": "Q2 2024",
+      "filename": "2024-Q2.html",
+      "periodStart": "2024-04-01",
+      "periodEnd": "2024-06-30"
+    },
+    {
+      "id": "2024-Q3",
+      "type": "quarterly",
+      "year": 2024,
+      "quarter": 3,
+      "title": "Q3 2024",
+      "filename": "2024-Q3.html",
+      "periodStart": "2024-07-01",
+      "periodEnd": "2024-09-30"
+    },
+    {
+      "id": "2024-Q4",
+      "type": "quarterly",
+      "year": 2024,
+      "quarter": 4,
+      "title": "Q4 2024",
+      "filename": "2024-Q4.html",
+      "periodStart": "2024-10-01",
+      "periodEnd": "2024-12-31"
+    },
+    {
+      "id": "2024-annual",
+      "type": "annual",
+      "year": 2024,
+      "title": "2024 Annual Report",
+      "filename": "2024-annual.html",
+      "periodStart": "2024-01-01",
+      "periodEnd": "2024-12-31"
+    },
+    {
+      "id": "2025-Q1",
+      "type": "quarterly",
+      "year": 2025,
+      "quarter": 1,
+      "title": "Q1 2025",
+      "filename": "2025-Q1.html",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-03-31"
+    },
+    {
+      "id": "2025-Q2",
+      "type": "quarterly",
+      "year": 2025,
+      "quarter": 2,
+      "title": "Q2 2025",
+      "filename": "2025-Q2.html",
+      "periodStart": "2025-04-01",
+      "periodEnd": "2025-06-30"
+    },
+    {
+      "id": "2025-Q3",
+      "type": "quarterly",
+      "year": 2025,
+      "quarter": 3,
+      "title": "Q3 2025",
+      "filename": "2025-Q3.html",
+      "periodStart": "2025-07-01",
+      "periodEnd": "2025-09-30"
+    },
+    {
+      "id": "2025-Q4",
+      "type": "quarterly",
+      "year": 2025,
+      "quarter": 4,
+      "title": "Q4 2025",
+      "filename": "2025-Q4.html",
+      "periodStart": "2025-10-01",
+      "periodEnd": "2025-12-31"
+    },
+    {
+      "id": "2025-annual",
+      "type": "annual",
+      "year": 2025,
+      "title": "2025 Annual Report",
+      "filename": "2025-annual.html",
+      "periodStart": "2025-01-01",
+      "periodEnd": "2025-12-31"
+    }
+  ]
+}

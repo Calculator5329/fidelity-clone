@@ -1,0 +1,1191 @@
+{
+  "META": {
+    "entries": [
+      {
+        "date": "2021-01-02",
+        "fairValue": 420,
+        "inputs": {
+          "currentRevenue": 86000000000,
+          "currentEPS": 13.77,
+          "sharesOutstanding": 2800000000,
+          "revenueGrowth": 20,
+          "targetMargin": 35,
+          "terminalPE": 20,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2021-10-02",
+        "fairValue": 481,
+        "inputs": {
+          "currentRevenue": 86000000000,
+          "currentEPS": 13.77,
+          "sharesOutstanding": 2800000000,
+          "revenueGrowth": 20,
+          "targetMargin": 35,
+          "terminalPE": 20,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2022-10-02",
+        "fairValue": 529.1,
+        "inputs": {
+          "currentRevenue": 117000000000,
+          "currentEPS": 8.59,
+          "sharesOutstanding": 2700000000,
+          "revenueGrowth": 18,
+          "targetMargin": 32,
+          "terminalPE": 18,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2023-10-02",
+        "fairValue": 582.01,
+        "inputs": {
+          "currentRevenue": 134000000000,
+          "currentEPS": 14.87,
+          "sharesOutstanding": 2600000000,
+          "revenueGrowth": 16,
+          "targetMargin": 34,
+          "terminalPE": 19,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2024-10-02",
+        "fairValue": 640.21,
+        "inputs": {
+          "currentRevenue": 150000000000,
+          "currentEPS": 21.5,
+          "sharesOutstanding": 2550000000,
+          "revenueGrowth": 15,
+          "targetMargin": 35,
+          "terminalPE": 20,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2025-09-01",
+        "fairValue": 900,
+        "inputs": {
+          "currentRevenue": 165000000000,
+          "currentEPS": 24.5,
+          "sharesOutstanding": 2500000000,
+          "revenueGrowth": 18,
+          "targetMargin": 38,
+          "terminalPE": 22,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2025-12-14",
+        "fairValue": 1031.38,
+        "futureValue": 1661.05,
+        "inputs": {
+          "currentRevenue": 189500000000,
+          "currentEPS": 28.4,
+          "sharesOutstanding": 2570000000,
+          "revenueGrowth": 15,
+          "targetMargin": 40,
+          "terminalPE": 28,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 10,
+            "profitMargin": 36,
+            "peRatio": 24,
+            "dividendAndBuyback": 2
+          },
+          "moderate": {
+            "revenueGrowth": 15,
+            "profitMargin": 40,
+            "peRatio": 28,
+            "dividendAndBuyback": 1.25
+          },
+          "aggressive": {
+            "revenueGrowth": 20,
+            "peRatio": 32,
+            "dividendAndBuyback": 1,
+            "profitMargin": 45
+          }
+        },
+        "ratings": {
+          "valuation": "Undervalued",
+          "moat": "Legendary",
+          "allocation": "Balanced",
+          "financialHealth": "AntiFrag",
+          "growth": "Aggressive"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 189500000000,
+      "currentEPS": 28.4,
+      "sharesOutstanding": 2570000000,
+      "revenueGrowth": 15,
+      "targetMargin": 40,
+      "terminalPE": 28,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "GOOGL": {
+    "entries": [
+      {
+        "date": "2021-11-20",
+        "fairValue": 150,
+        "inputs": {
+          "currentRevenue": 257000000000,
+          "currentEPS": 5.61,
+          "sharesOutstanding": 13000000000,
+          "revenueGrowth": 12,
+          "targetMargin": 26,
+          "terminalPE": 18,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2022-11-20",
+        "fairValue": 165,
+        "inputs": {
+          "currentRevenue": 283000000000,
+          "currentEPS": 4.56,
+          "sharesOutstanding": 12800000000,
+          "revenueGrowth": 10,
+          "targetMargin": 24,
+          "terminalPE": 18,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2023-11-20",
+        "fairValue": 181.5,
+        "inputs": {
+          "currentRevenue": 307000000000,
+          "currentEPS": 5.8,
+          "sharesOutstanding": 12600000000,
+          "revenueGrowth": 11,
+          "targetMargin": 26,
+          "terminalPE": 18,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2024-11-20",
+        "fairValue": 199.65,
+        "inputs": {
+          "currentRevenue": 340000000000,
+          "currentEPS": 7.2,
+          "sharesOutstanding": 12500000000,
+          "revenueGrowth": 11,
+          "targetMargin": 28,
+          "terminalPE": 18,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2025-04-01",
+        "fairValue": 300,
+        "inputs": {
+          "currentRevenue": 350000000000,
+          "currentEPS": 7.8,
+          "sharesOutstanding": 12400000000,
+          "revenueGrowth": 12,
+          "targetMargin": 30,
+          "terminalPE": 20,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2025-12-14",
+        "fairValue": 386.74,
+        "futureValue": 622.84,
+        "inputs": {
+          "currentRevenue": 385500000000,
+          "currentEPS": 10.18,
+          "sharesOutstanding": 12200000000,
+          "revenueGrowth": 15,
+          "targetMargin": 35,
+          "terminalPE": 28,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "peRatio": 24,
+            "dividendAndBuyback": 2,
+            "profitMargin": 30,
+            "revenueGrowth": 12
+          },
+          "aggressive": {
+            "peRatio": 32,
+            "dividendAndBuyback": 1,
+            "profitMargin": 40,
+            "revenueGrowth": 18
+          },
+          "moderate": {
+            "profitMargin": 35,
+            "peRatio": 28,
+            "dividendAndBuyback": 1.5,
+            "revenueGrowth": 15
+          }
+        },
+        "ratings": {
+          "moat": "Widening",
+          "allocation": "Balanced",
+          "financialHealth": "AntiFrag",
+          "valuation": "Undervalued",
+          "growth": "Aggressive"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 385500000000,
+      "currentEPS": 10.18,
+      "sharesOutstanding": 12200000000,
+      "revenueGrowth": 15,
+      "targetMargin": 35,
+      "terminalPE": 28,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "AMZN": {
+    "entries": [
+      {
+        "date": "2021-10-02",
+        "fairValue": 186,
+        "inputs": {
+          "currentRevenue": 458000000000,
+          "currentEPS": 3.24,
+          "sharesOutstanding": 10200000000,
+          "revenueGrowth": 15,
+          "targetMargin": 6,
+          "terminalPE": 25,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2022-10-02",
+        "fairValue": 204.6,
+        "inputs": {
+          "currentRevenue": 502000000000,
+          "currentEPS": -0.27,
+          "sharesOutstanding": 10300000000,
+          "revenueGrowth": 12,
+          "targetMargin": 5,
+          "terminalPE": 25,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2023-10-02",
+        "fairValue": 225.06,
+        "inputs": {
+          "currentRevenue": 538000000000,
+          "currentEPS": 2.9,
+          "sharesOutstanding": 10350000000,
+          "revenueGrowth": 11,
+          "targetMargin": 6,
+          "terminalPE": 25,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2024-10-02",
+        "fairValue": 247.57,
+        "inputs": {
+          "currentRevenue": 575000000000,
+          "currentEPS": 4.5,
+          "sharesOutstanding": 10400000000,
+          "revenueGrowth": 11,
+          "targetMargin": 7,
+          "terminalPE": 25,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2025-12-13",
+        "fairValue": 365.47,
+        "futureValue": 588.59,
+        "inputs": {
+          "currentRevenue": 691000000000,
+          "currentEPS": 7,
+          "sharesOutstanding": 10850000000,
+          "revenueGrowth": 14,
+          "targetMargin": 16,
+          "terminalPE": 30,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 10,
+            "dividendAndBuyback": 1,
+            "peRatio": 25,
+            "profitMargin": 13
+          },
+          "aggressive": {
+            "revenueGrowth": 18,
+            "dividendAndBuyback": 2,
+            "peRatio": 35,
+            "profitMargin": 20
+          },
+          "moderate": {
+            "revenueGrowth": 14,
+            "dividendAndBuyback": 1,
+            "peRatio": 30,
+            "profitMargin": 16
+          }
+        },
+        "ratings": {
+          "valuation": "Undervalued",
+          "moat": "Legendary",
+          "allocation": "Balanced",
+          "financialHealth": "AntiFrag",
+          "growth": "Moderate"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 691000000000,
+      "currentEPS": 7,
+      "sharesOutstanding": 10850000000,
+      "revenueGrowth": 14,
+      "targetMargin": 16,
+      "terminalPE": 30,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "PYPL": {
+    "entries": [
+      {
+        "date": "2025-10-01",
+        "fairValue": 85,
+        "inputs": {
+          "currentRevenue": 32000000000,
+          "currentEPS": 4.5,
+          "sharesOutstanding": 1050000000,
+          "revenueGrowth": 8,
+          "targetMargin": 18,
+          "terminalPE": 15,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        }
+      },
+      {
+        "date": "2025-12-09",
+        "fairValue": 105.45,
+        "futureValue": 169.82,
+        "inputs": {
+          "currentRevenue": 32860000000,
+          "currentEPS": 5.04,
+          "sharesOutstanding": 977000000,
+          "revenueGrowth": 7,
+          "targetMargin": 18,
+          "terminalPE": 20,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 3,
+            "profitMargin": 16,
+            "peRatio": 16,
+            "dividendAndBuyback": 7
+          },
+          "moderate": {
+            "revenueGrowth": 7,
+            "profitMargin": 18,
+            "peRatio": 20,
+            "dividendAndBuyback": 6
+          },
+          "aggressive": {
+            "revenueGrowth": 12,
+            "profitMargin": 20,
+            "peRatio": 25,
+            "dividendAndBuyback": 5
+          }
+        },
+        "ratings": {
+          "valuation": "Gulag",
+          "moat": "Stable",
+          "allocation": "ShareholderYield",
+          "financialHealth": "Fortress",
+          "growth": "Conservative"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 32860000000,
+      "currentEPS": 5.04,
+      "sharesOutstanding": 977000000,
+      "revenueGrowth": 7,
+      "targetMargin": 18,
+      "terminalPE": 20,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "TXRH": {
+    "entries": [
+      {
+        "date": "2025-12-14",
+        "fairValue": 200.59,
+        "futureValue": 323.05,
+        "inputs": {
+          "currentRevenue": 5830000000,
+          "currentEPS": 6.56,
+          "sharesOutstanding": 66500000,
+          "revenueGrowth": 13,
+          "targetMargin": 8,
+          "terminalPE": 25,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 10,
+            "profitMargin": 7,
+            "peRatio": 22,
+            "dividendAndBuyback": 3
+          },
+          "moderate": {
+            "revenueGrowth": 13,
+            "profitMargin": 8,
+            "peRatio": 25,
+            "dividendAndBuyback": 2.5
+          },
+          "aggressive": {
+            "revenueGrowth": 16,
+            "profitMargin": 9,
+            "peRatio": 28,
+            "dividendAndBuyback": 2
+          }
+        },
+        "ratings": {
+          "valuation": "FairlyValued",
+          "moat": "Stable",
+          "allocation": "Balanced",
+          "financialHealth": "Leveraged",
+          "growth": "Moderate"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 5830000000,
+      "currentEPS": 6.56,
+      "sharesOutstanding": 66500000,
+      "revenueGrowth": 13,
+      "targetMargin": 8,
+      "terminalPE": 25,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "DUOL": {
+    "entries": [
+      {
+        "date": "2025-12-09",
+        "fairValue": 499.83,
+        "futureValue": 804.98,
+        "inputs": {
+          "currentRevenue": 964000000000,
+          "currentEPS": 4.48,
+          "sharesOutstanding": 49800000000,
+          "revenueGrowth": 30,
+          "targetMargin": 28,
+          "terminalPE": 40,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "peRatio": 25,
+            "dividendAndBuyback": 0,
+            "revenueGrowth": 20,
+            "profitMargin": 24
+          },
+          "aggressive": {
+            "dividendAndBuyback": 0,
+            "revenueGrowth": 40,
+            "peRatio": 50,
+            "profitMargin": 35
+          },
+          "moderate": {
+            "dividendAndBuyback": 0,
+            "revenueGrowth": 30,
+            "peRatio": 40,
+            "profitMargin": 28
+          }
+        },
+        "ratings": {
+          "allocation": "Reinvestment",
+          "valuation": "Gulag",
+          "moat": "Widening",
+          "growth": "Amazing",
+          "financialHealth": "Fortress"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 964000000000,
+      "currentEPS": 4.48,
+      "sharesOutstanding": 49800000000,
+      "revenueGrowth": 30,
+      "targetMargin": 28,
+      "terminalPE": 40,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "AMD": {
+    "entries": [
+      {
+        "date": "2025-12-17",
+        "fairValue": 342.26,
+        "futureValue": 551.21,
+        "inputs": {
+          "currentRevenue": 32000000000,
+          "currentEPS": 2.56,
+          "sharesOutstanding": 1640000000,
+          "revenueGrowth": 35,
+          "targetMargin": 18,
+          "terminalPE": 35,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 25,
+            "profitMargin": 14,
+            "peRatio": 25,
+            "dividendAndBuyback": 1
+          },
+          "moderate": {
+            "revenueGrowth": 35,
+            "profitMargin": 18,
+            "peRatio": 35,
+            "dividendAndBuyback": 1
+          },
+          "aggressive": {
+            "peRatio": 50,
+            "dividendAndBuyback": 2,
+            "profitMargin": 28,
+            "revenueGrowth": 45
+          }
+        },
+        "ratings": {
+          "valuation": "Undervalued",
+          "moat": "Stable",
+          "allocation": "Reinvestment",
+          "financialHealth": "Fortress",
+          "growth": "Amazing"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 32000000000,
+      "currentEPS": 2.56,
+      "sharesOutstanding": 1640000000,
+      "revenueGrowth": 35,
+      "targetMargin": 18,
+      "terminalPE": 35,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "ASML": {
+    "entries": [
+      {
+        "date": "2025-12-17",
+        "fairValue": 1206.74,
+        "futureValue": 1943.47,
+        "inputs": {
+          "currentRevenue": 37830000000,
+          "currentEPS": 29.85,
+          "sharesOutstanding": 387600000,
+          "revenueGrowth": 15,
+          "targetMargin": 33,
+          "terminalPE": 30,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 10,
+            "profitMargin": 30,
+            "peRatio": 20,
+            "dividendAndBuyback": 2.5
+          },
+          "moderate": {
+            "revenueGrowth": 15,
+            "profitMargin": 33,
+            "peRatio": 30,
+            "dividendAndBuyback": 2
+          },
+          "aggressive": {
+            "revenueGrowth": 20,
+            "profitMargin": 36,
+            "peRatio": 40,
+            "dividendAndBuyback": 1.5
+          }
+        },
+        "ratings": {
+          "valuation": "Undervalued",
+          "moat": "Widening",
+          "allocation": "Balanced",
+          "financialHealth": "AntiFrag",
+          "growth": "Aggressive"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 37830000000,
+      "currentEPS": 29.85,
+      "sharesOutstanding": 387600000,
+      "revenueGrowth": 15,
+      "targetMargin": 33,
+      "terminalPE": 30,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "MELI": {
+    "entries": [
+      {
+        "date": "2025-12-14",
+        "fairValue": 5824.37,
+        "futureValue": 9380.21,
+        "inputs": {
+          "currentRevenue": 26000000000,
+          "currentEPS": 40,
+          "sharesOutstanding": 50000000,
+          "revenueGrowth": 28,
+          "targetMargin": 15,
+          "terminalPE": 35,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 20,
+            "profitMargin": 10,
+            "peRatio": 25,
+            "dividendAndBuyback": 1
+          },
+          "aggressive": {
+            "dividendAndBuyback": 2,
+            "peRatio": 45,
+            "profitMargin": 20,
+            "revenueGrowth": 36
+          },
+          "moderate": {
+            "dividendAndBuyback": 1,
+            "peRatio": 35,
+            "profitMargin": 15,
+            "revenueGrowth": 28
+          }
+        },
+        "ratings": {
+          "valuation": "Undervalued",
+          "moat": "Stable",
+          "allocation": "Reinvestment",
+          "financialHealth": "Fortress",
+          "growth": "Amazing"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 26000000000,
+      "currentEPS": 40,
+      "sharesOutstanding": 50000000,
+      "revenueGrowth": 28,
+      "targetMargin": 15,
+      "terminalPE": 35,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "NKE": {
+    "entries": [
+      {
+        "date": "2025-12-14",
+        "fairValue": 78.63,
+        "futureValue": 126.64,
+        "inputs": {
+          "currentRevenue": 46400000000,
+          "currentEPS": 1.96,
+          "sharesOutstanding": 1480000000,
+          "revenueGrowth": 7,
+          "targetMargin": 12,
+          "terminalPE": 24,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 4,
+            "profitMargin": 8,
+            "peRatio": 20,
+            "dividendAndBuyback": 5
+          },
+          "aggressive": {
+            "revenueGrowth": 10,
+            "peRatio": 28,
+            "dividendAndBuyback": 3,
+            "profitMargin": 16
+          },
+          "moderate": {
+            "revenueGrowth": 7,
+            "dividendAndBuyback": 4,
+            "peRatio": 24,
+            "profitMargin": 12
+          }
+        },
+        "ratings": {
+          "moat": "Stable",
+          "allocation": "ShareholderYield",
+          "financialHealth": "Leveraged",
+          "growth": "Conservative",
+          "valuation": "Undervalued"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 46400000000,
+      "currentEPS": 1.96,
+      "sharesOutstanding": 1480000000,
+      "revenueGrowth": 7,
+      "targetMargin": 12,
+      "terminalPE": 24,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "ADBE": {
+    "entries": [
+      {
+        "date": "2025-12-13",
+        "fairValue": 474.82,
+        "futureValue": 764.7,
+        "inputs": {
+          "currentRevenue": 24000000000,
+          "currentEPS": 17.99,
+          "sharesOutstanding": 417000000,
+          "revenueGrowth": 10,
+          "targetMargin": 33,
+          "terminalPE": 25,
+          "yearsToTerminal": 5,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "peRatio": 20,
+            "profitMargin": 30,
+            "dividendAndBuyback": 7,
+            "revenueGrowth": 8
+          },
+          "aggressive": {
+            "peRatio": 30,
+            "profitMargin": 36,
+            "revenueGrowth": 12,
+            "dividendAndBuyback": 4
+          },
+          "moderate": {
+            "peRatio": 25,
+            "dividendAndBuyback": 6,
+            "revenueGrowth": 10,
+            "profitMargin": 33
+          }
+        },
+        "ratings": {
+          "moat": "Stable",
+          "growth": "Moderate",
+          "allocation": "ShareholderYield",
+          "valuation": "Gulag",
+          "financialHealth": "AntiFrag"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 24000000000,
+      "currentEPS": 17.99,
+      "sharesOutstanding": 417000000,
+      "revenueGrowth": 10,
+      "targetMargin": 33,
+      "terminalPE": 25,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "CRM": {
+    "entries": [
+      {
+        "date": "2025-12-24",
+        "fairValue": 305.12,
+        "futureValue": 594.6,
+        "inputs": {
+          "currentRevenue": 40320000000,
+          "currentEPS": 9.98,
+          "sharesOutstanding": 962000000,
+          "revenueGrowth": 10,
+          "targetMargin": 28,
+          "terminalPE": 26,
+          "yearsToTerminal": 7,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 7,
+            "profitMargin": 24,
+            "peRatio": 23,
+            "dividendAndBuyback": 3
+          },
+          "moderate": {
+            "revenueGrowth": 10,
+            "profitMargin": 28,
+            "peRatio": 26,
+            "dividendAndBuyback": 2
+          },
+          "aggressive": {
+            "revenueGrowth": 13,
+            "profitMargin": 32,
+            "peRatio": 29,
+            "dividendAndBuyback": 1
+          }
+        },
+        "ratings": {
+          "valuation": "FairlyValued",
+          "moat": "Widening",
+          "allocation": "Balanced",
+          "financialHealth": "Fortress",
+          "growth": "Moderate"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 40320000000,
+      "currentEPS": 9.98,
+      "sharesOutstanding": 962000000,
+      "revenueGrowth": 10,
+      "targetMargin": 28,
+      "terminalPE": 26,
+      "yearsToTerminal": 7,
+      "discountRate": 10
+    }
+  },
+  "MA": {
+    "entries": [
+      {
+        "date": "2025-12-14",
+        "fairValue": 699.37,
+        "futureValue": 1362.87,
+        "inputs": {
+          "currentRevenue": 31500000000,
+          "currentEPS": 15.75,
+          "sharesOutstanding": 905000000,
+          "revenueGrowth": 15,
+          "targetMargin": 46,
+          "terminalPE": 32,
+          "yearsToTerminal": 7,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 12,
+            "profitMargin": 44,
+            "peRatio": 28,
+            "dividendAndBuyback": 3
+          },
+          "moderate": {
+            "revenueGrowth": 15,
+            "profitMargin": 46,
+            "peRatio": 32,
+            "dividendAndBuyback": 2.5
+          },
+          "aggressive": {
+            "revenueGrowth": 18,
+            "profitMargin": 48,
+            "peRatio": 36,
+            "dividendAndBuyback": 2
+          }
+        },
+        "ratings": {
+          "valuation": "FairlyValued",
+          "moat": "Legendary",
+          "allocation": "Balanced",
+          "financialHealth": "AntiFrag",
+          "growth": "Aggressive"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 31500000000,
+      "currentEPS": 15.75,
+      "sharesOutstanding": 905000000,
+      "revenueGrowth": 15,
+      "targetMargin": 46,
+      "terminalPE": 32,
+      "yearsToTerminal": 7,
+      "discountRate": 10
+    }
+  },
+  "CELH": {
+    "entries": [],
+    "currentInputs": {
+      "currentRevenue": 1500000000,
+      "currentEPS": 1,
+      "sharesOutstanding": 235000000,
+      "revenueGrowth": 20,
+      "targetMargin": 15,
+      "terminalPE": 25,
+      "yearsToTerminal": 5,
+      "discountRate": 10
+    }
+  },
+  "SOFI": {
+    "entries": [
+      {
+        "date": "2025-12-14",
+        "fairValue": 50.08,
+        "futureValue": 97.59,
+        "inputs": {
+          "currentRevenue": 4400000000,
+          "currentEPS": 0.5,
+          "sharesOutstanding": 1290000000,
+          "revenueGrowth": 25,
+          "targetMargin": 20,
+          "terminalPE": 30,
+          "yearsToTerminal": 7,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 20,
+            "profitMargin": 15,
+            "peRatio": 25,
+            "dividendAndBuyback": -3
+          },
+          "moderate": {
+            "revenueGrowth": 25,
+            "profitMargin": 20,
+            "peRatio": 30,
+            "dividendAndBuyback": -3
+          },
+          "aggressive": {
+            "revenueGrowth": 30,
+            "profitMargin": 25,
+            "peRatio": 35,
+            "dividendAndBuyback": -3
+          }
+        },
+        "ratings": {
+          "valuation": "FairlyValued",
+          "moat": "Widening",
+          "allocation": "Reinvestment",
+          "financialHealth": "Fortress",
+          "growth": "Amazing"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 4400000000,
+      "currentEPS": 0.5,
+      "sharesOutstanding": 1290000000,
+      "revenueGrowth": 25,
+      "targetMargin": 20,
+      "terminalPE": 30,
+      "yearsToTerminal": 7,
+      "discountRate": 10
+    }
+  },
+  "NFLX": {
+    "entries": [
+      {
+        "date": "2025-12-14",
+        "fairValue": 109.56,
+        "futureValue": 213.51,
+        "inputs": {
+          "currentRevenue": 43000000000,
+          "currentEPS": 2.3,
+          "sharesOutstanding": 4350000000,
+          "revenueGrowth": 15,
+          "targetMargin": 29,
+          "terminalPE": 28,
+          "yearsToTerminal": 7,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 12,
+            "profitMargin": 26,
+            "peRatio": 24,
+            "dividendAndBuyback": 0.75
+          },
+          "moderate": {
+            "revenueGrowth": 15,
+            "profitMargin": 29,
+            "peRatio": 28,
+            "dividendAndBuyback": 0.5
+          },
+          "aggressive": {
+            "revenueGrowth": 18,
+            "profitMargin": 32,
+            "peRatio": 32,
+            "dividendAndBuyback": 0.25
+          }
+        },
+        "ratings": {
+          "valuation": "FairlyValued",
+          "moat": "Widening",
+          "allocation": "Reinvestment",
+          "financialHealth": "Fortress",
+          "growth": "Aggressive"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 43000000000,
+      "currentEPS": 2.3,
+      "sharesOutstanding": 4350000000,
+      "revenueGrowth": 15,
+      "targetMargin": 29,
+      "terminalPE": 28,
+      "yearsToTerminal": 7,
+      "discountRate": 10
+    }
+  },
+  "AAPL": {
+    "entries": [
+      {
+        "date": "2025-12-14",
+        "fairValue": 161.78,
+        "futureValue": 315.26,
+        "inputs": {
+          "currentRevenue": 416000000000,
+          "currentEPS": 7.47,
+          "sharesOutstanding": 15000000000,
+          "revenueGrowth": 6,
+          "targetMargin": 27,
+          "terminalPE": 28,
+          "yearsToTerminal": 7,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 4,
+            "profitMargin": 25,
+            "peRatio": 24,
+            "dividendAndBuyback": 2.25
+          },
+          "moderate": {
+            "revenueGrowth": 6,
+            "profitMargin": 27,
+            "peRatio": 28,
+            "dividendAndBuyback": 1.75
+          },
+          "aggressive": {
+            "revenueGrowth": 8,
+            "profitMargin": 30,
+            "peRatio": 32,
+            "dividendAndBuyback": 1.25
+          }
+        },
+        "ratings": {
+          "valuation": "Overvalued",
+          "moat": "Widening",
+          "allocation": "ShareholderYield",
+          "financialHealth": "AntiFrag",
+          "growth": "Conservative"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 416000000000,
+      "currentEPS": 7.47,
+      "sharesOutstanding": 15000000000,
+      "revenueGrowth": 6,
+      "targetMargin": 27,
+      "terminalPE": 28,
+      "yearsToTerminal": 7,
+      "discountRate": 10
+    }
+  },
+  "MSFT": {
+    "entries": [
+      {
+        "date": "2025-12-14",
+        "fairValue": 545.8,
+        "futureValue": 1063.61,
+        "inputs": {
+          "currentRevenue": 294000000000,
+          "currentEPS": 14.06,
+          "sharesOutstanding": 7470000000,
+          "revenueGrowth": 14,
+          "targetMargin": 36,
+          "terminalPE": 30,
+          "yearsToTerminal": 7,
+          "discountRate": 10
+        },
+        "scenarios": {
+          "conservative": {
+            "revenueGrowth": 12,
+            "profitMargin": 34,
+            "peRatio": 25,
+            "dividendAndBuyback": 1
+          },
+          "moderate": {
+            "revenueGrowth": 14,
+            "profitMargin": 36,
+            "peRatio": 30,
+            "dividendAndBuyback": 0.75
+          },
+          "aggressive": {
+            "revenueGrowth": 16,
+            "profitMargin": 38,
+            "peRatio": 35,
+            "dividendAndBuyback": 0.5
+          }
+        },
+        "ratings": {
+          "valuation": "FairlyValued",
+          "moat": "Legendary",
+          "allocation": "Balanced",
+          "financialHealth": "AntiFrag",
+          "growth": "Moderate"
+        }
+      }
+    ],
+    "currentInputs": {
+      "currentRevenue": 294000000000,
+      "currentEPS": 14.06,
+      "sharesOutstanding": 7470000000,
+      "revenueGrowth": 14,
+      "targetMargin": 36,
+      "terminalPE": 30,
+      "yearsToTerminal": 7,
+      "discountRate": 10
+    }
+  }
+}

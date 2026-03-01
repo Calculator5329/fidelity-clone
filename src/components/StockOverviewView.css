@@ -1,0 +1,155 @@
+.stock-overview-view {
+  padding: 24px;
+  overflow-y: auto;
+  height: 100%;
+  background-color: var(--bg-primary);
+}
+
+/* Header */
+.stock-header {
+  margin-bottom: 24px;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: var(--accent-blue);
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: var(--bg-card-hover);
+}
+
+.stock-title {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.stock-title h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.stock-description {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.stock-quick-stats {
+  display: flex;
+  gap: 32px;
+  padding: 16px 20px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.quick-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stat-value.positive {
+  color: var(--accent-green);
+}
+
+.stat-value.negative {
+  color: var(--accent-red);
+}
+
+/* Two-column layout */
+.stock-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.stock-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Card overrides */
+.stock-chart-card {
+  min-height: 400px;
+}
+
+.stock-transactions-card {
+  min-height: 300px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stock-transactions-card.full-width-card {
+  margin-top: 24px;
+  max-height: 600px;
+}
+
+.stock-thesis-card {
+  min-height: 250px;
+}
+
+.stock-dcf-card {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .stock-content {
+    grid-template-columns: 1fr;
+  }
+
+  .stock-quick-stats {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .quick-stat {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stock-overview-view {
+    padding: 16px;
+  }
+
+  .stock-title {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .stock-quick-stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

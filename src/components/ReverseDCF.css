@@ -1,0 +1,260 @@
+.reverse-dcf {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Inputs */
+.dcf-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.input-row label {
+  font-size: 13px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.input-row input {
+  width: 130px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: right;
+  background-color: rgba(40, 44, 52, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
+  transition: border-color 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.input-row input:hover {
+  background-color: rgba(50, 55, 65, 0.95);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.input-row input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 0 2px rgba(66, 165, 245, 0.15);
+}
+
+.input-row input::placeholder {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-family: inherit;
+}
+
+/* Remove spinner arrows for number inputs */
+.input-row input[type="number"]::-webkit-outer-spin-button,
+.input-row input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-row input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border-color), transparent);
+  margin: 12px 0;
+}
+
+/* Results */
+.dcf-results {
+  padding: 16px;
+  background-color: var(--bg-card-hover);
+  border-radius: 8px;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.result-row.main-result {
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.result-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.result-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.main-result .result-value {
+  font-size: 24px;
+  color: var(--accent-blue);
+}
+
+.result-value.positive {
+  color: var(--accent-green);
+}
+
+.result-value.negative {
+  color: var(--accent-red);
+}
+
+.result-value.yield-value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.yield-breakdown {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+/* Indicator */
+.result-indicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.indicator-badge {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.indicator-badge.buy {
+  background-color: rgba(76, 175, 80, 0.15);
+  color: var(--accent-green);
+}
+
+.indicator-badge.hold {
+  background-color: rgba(66, 165, 245, 0.15);
+  color: var(--accent-blue);
+}
+
+.indicator-badge.caution {
+  background-color: rgba(255, 193, 7, 0.15);
+  color: #ffc107;
+}
+
+.indicator-badge.sell {
+  background-color: rgba(239, 83, 80, 0.15);
+  color: var(--accent-red);
+}
+
+/* Actions */
+.dcf-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.save-btn,
+.history-btn {
+  flex: 1;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.save-btn {
+  background-color: var(--fidelity-green);
+  color: white;
+  border: none;
+}
+
+.save-btn:hover:not(:disabled) {
+  background-color: #5a9f33;
+}
+
+.save-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.history-btn {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+}
+
+.history-btn:hover:not(:disabled) {
+  background-color: var(--bg-card-hover);
+  color: var(--text-primary);
+}
+
+.history-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* History */
+.dcf-history {
+  padding: 16px;
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.dcf-history h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 12px 0;
+}
+
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.history-table th {
+  padding: 8px 6px;
+  text-align: left;
+  font-weight: 500;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.history-table td {
+  padding: 8px 6px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.history-table .align-right {
+  text-align: right;
+}
+
+.history-table tr:last-child td {
+  border-bottom: none;
+}
+
+.history-table tr:hover td {
+  background-color: var(--bg-card-hover);
+}

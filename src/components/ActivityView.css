@@ -1,0 +1,368 @@
+.activity-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 24px;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.activity-title h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.activity-title .account-number {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.activity-stats {
+  display: flex;
+  gap: 32px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stat-value.positive {
+  color: var(--accent-green);
+}
+
+.activity-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--text-muted);
+}
+
+.filter-btn.active {
+  color: var(--accent-blue);
+  background-color: rgba(0, 125, 181, 0.1);
+  border-color: var(--accent-blue);
+}
+
+.filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 18px;
+  padding: 0 5px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: var(--bg-input);
+  border-radius: 10px;
+}
+
+.filter-btn.active .filter-count {
+  background-color: var(--accent-blue);
+  color: white;
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.search-input {
+  padding: 8px 12px 8px 34px;
+  width: 240px;
+  background-color: var(--bg-input);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-size: 13px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-blue);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.toolbar-btn {
+  padding: 6px;
+  color: var(--text-muted);
+  border-radius: 4px;
+  transition: all 0.2s;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toolbar-btn:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-card);
+}
+
+.activity-table-container {
+  flex: 1;
+  overflow: auto;
+  background-color: var(--bg-primary);
+}
+
+.activity-table {
+  width: 100%;
+  min-width: 1100px;
+  border-collapse: collapse;
+}
+
+.activity-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--bg-secondary);
+}
+
+.activity-table th {
+  padding: 10px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+  text-align: left;
+}
+
+.activity-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.activity-table th.sortable:hover {
+  color: var(--text-primary);
+}
+
+.sort-arrow {
+  margin-left: 4px;
+  font-size: 10px;
+}
+
+.activity-table th.align-right,
+.activity-table td.align-right {
+  text-align: right;
+}
+
+.activity-table td {
+  padding: 12px;
+  font-size: 14px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.activity-table tbody tr:hover {
+  background-color: var(--bg-card);
+}
+
+.activity-table tbody tr.processing {
+  background-color: rgba(255, 193, 7, 0.05);
+}
+
+.date-cell {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.action-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.action-badge.buy {
+  background-color: rgba(0, 166, 81, 0.15);
+  color: var(--accent-green);
+}
+
+.action-badge.sell {
+  background-color: rgba(210, 43, 43, 0.15);
+  color: var(--accent-red);
+}
+
+.action-badge.dividend {
+  background-color: rgba(0, 125, 181, 0.15);
+  color: var(--accent-blue);
+}
+
+.action-badge.transfer {
+  background-color: rgba(156, 163, 175, 0.2);
+  color: var(--text-muted);
+}
+
+.action-badge.other {
+  background-color: rgba(156, 163, 175, 0.15);
+  color: var(--text-muted);
+}
+
+.symbol-link {
+  font-weight: 600;
+  color: var(--accent-blue);
+  text-decoration: none;
+}
+
+.symbol-link:hover {
+  text-decoration: underline;
+}
+
+.no-symbol {
+  color: var(--text-muted);
+}
+
+.description-cell {
+  max-width: 220px;
+}
+
+.description-text {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.positive {
+  color: var(--accent-green) !important;
+}
+
+.negative {
+  color: var(--accent-red) !important;
+}
+
+.processing-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #d4a017;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.status-badge.completed {
+  background-color: rgba(0, 166, 81, 0.15);
+  color: var(--accent-green);
+}
+
+.status-badge.pending {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #d4a017;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 48px !important;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.activity-footer {
+  padding: 12px 24px;
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+}
+
+.results-count {
+  font-size: 13px;
+  color: var(--text-muted);
+}

@@ -1,0 +1,166 @@
+.stock-price-chart {
+  padding: 8px 0;
+}
+
+.stock-price-chart.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: var(--text-muted);
+}
+
+/* Period selector */
+.stock-price-chart .period-selector {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.stock-price-chart .period-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.stock-price-chart .period-btn:hover {
+  background-color: var(--bg-card-hover);
+  color: var(--text-primary);
+}
+
+.stock-price-chart .period-btn.active {
+  background-color: var(--fidelity-green);
+  color: white;
+}
+
+/* Chart footer */
+.chart-footer {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.period-return {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.period-return.positive {
+  color: var(--accent-green);
+}
+
+.period-return.negative {
+  color: var(--accent-red);
+}
+
+/* Legend info */
+.chart-legend-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 24px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.legend-item.toggle {
+  cursor: pointer;
+  user-select: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.legend-item.toggle:hover {
+  background-color: var(--bg-card-hover);
+}
+
+.legend-item.toggle input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #42a5f5;
+  cursor: pointer;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.legend-dot.price {
+  background-color: var(--accent-green);
+}
+
+.legend-dot.buy {
+  background-color: #42a5f5;
+}
+
+.legend-line {
+  width: 20px;
+  height: 2px;
+  border-top: 2px dashed #ffc107;
+}
+
+.legend-line.fair-value {
+  border-color: #ffc107;
+}
+
+/* Custom tooltip */
+.custom-tooltip {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 13px;
+}
+
+.tooltip-date {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tooltip-price,
+.tooltip-fair-value,
+.tooltip-buy {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 4px 0;
+}
+
+.tooltip-label {
+  color: var(--text-muted);
+}
+
+.tooltip-value {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.tooltip-fair-value .tooltip-value {
+  color: #ffc107;
+}
+
+.tooltip-buy .tooltip-value {
+  color: #42a5f5;
+}

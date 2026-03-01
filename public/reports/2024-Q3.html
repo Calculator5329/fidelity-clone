@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q3 2024 Portfolio Report - Growth Portfolio</title>
+  <style>
+    :root {
+      --bg-primary: #0a0f1a;
+      --bg-secondary: #111827;
+      --bg-card: #1a2236;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --accent-primary: #3b82f6;
+      --accent-success: #10b981;
+      --accent-danger: #ef4444;
+      --accent-warning: #f59e0b;
+      --border-color: #334155;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+    
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    
+    .report {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 48px 32px;
+    }
+    
+    /* Header */
+    .report-header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .report-header h1 {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    
+    .report-header .subtitle {
+      font-size: 1.125rem;
+      color: var(--text-secondary);
+      margin-bottom: 4px;
+    }
+    
+    .report-header .period {
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+    
+    /* Section */
+    .section {
+      margin-bottom: 48px;
+    }
+    
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--accent-primary);
+      display: inline-block;
+    }
+    
+    /* Summary Cards */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+    
+    .summary-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      padding: 24px;
+      border: 1px solid var(--border-color);
+    }
+    
+    .summary-card .label {
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    
+    .summary-card .value {
+      font-family: var(--font-mono);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    
+    .summary-card .change {
+      font-size: 0.875rem;
+      margin-top: 4px;
+    }
+    
+    .positive { color: var(--accent-success); }
+    .negative { color: var(--accent-danger); }
+    
+    /* Performance Comparison */
+    .performance-bars {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .performance-bar {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    
+    .performance-bar .label {
+      width: 120px;
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+    }
+    
+    .performance-bar .bar-container {
+      flex: 1;
+      height: 24px;
+      background: var(--bg-secondary);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .performance-bar .bar {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+    
+    .performance-bar .bar.portfolio { background: var(--accent-primary); }
+    .performance-bar .bar.benchmark { background: var(--text-muted); }
+    
+    .performance-bar .value {
+      width: 80px;
+      text-align: right;
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+    }
+    
+    /* Tables */
+    .table-container {
+      overflow-x: auto;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-card);
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th {
+      text-align: left;
+      padding: 16px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    td {
+      padding: 14px 16px;
+      font-size: 0.875rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    tr:last-child td {
+      border-bottom: none;
+    }
+    
+    tr:hover {
+      background: rgba(59, 130, 246, 0.05);
+    }
+    
+    .mono {
+      font-family: var(--font-mono);
+    }
+    
+    .text-right {
+      text-align: right;
+    }
+    
+    /* Thesis Cards */
+    .thesis-grid {
+      display: grid;
+      gap: 24px;
+    }
+    
+    .thesis-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      padding: 24px;
+      border: 1px solid var(--border-color);
+    }
+    
+    .thesis-card .symbol {
+      font-family: var(--font-mono);
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--accent-primary);
+      margin-bottom: 8px;
+    }
+    
+    .thesis-card .updated {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    
+    .thesis-card .content {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      white-space: pre-wrap;
+    }
+    
+    /* Transaction Summary */
+    .transaction-summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    
+    .transaction-stat {
+      background: var(--bg-secondary);
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    
+    .transaction-stat .type {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    
+    .transaction-stat .amount {
+      font-family: var(--font-mono);
+      font-size: 1.125rem;
+      font-weight: 600;
+    }
+    
+    .transaction-stat .count {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    
+    /* Footer */
+    .report-footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    
+    /* Print styles */
+    @media print {
+      body {
+        background: white;
+        color: #1a1a1a;
+      }
+      
+      .report {
+        max-width: none;
+        padding: 0;
+      }
+      
+      .summary-card,
+      .thesis-card,
+      .table-container {
+        border: 1px solid #e5e5e5;
+        background: #f9f9f9;
+      }
+      
+      .positive { color: #059669; }
+      .negative { color: #dc2626; }
+    }
+  </style>
+</head>
+<body>
+  <div class="report">
+    <header class="report-header">
+      <h1>Q3 2024 Portfolio Report</h1>
+      <p class="subtitle">Growth Portfolio</p>
+      <p class="period">July 1, 2024 — September 30, 2024</p>
+    </header>
+    
+    <!-- Performance Summary -->
+    <section class="section">
+      <h2 class="section-title">Performance Summary</h2>
+      
+      <div class="summary-grid">
+        <div class="summary-card">
+          <div class="label">Starting Value</div>
+          <div class="value">$35,925.51</div>
+        </div>
+        <div class="summary-card">
+          <div class="label">Ending Value</div>
+          <div class="value">$38,580.75</div>
+          <div class="change positive">
+            $2,655.24 (+7.39%)
+          </div>
+        </div>
+        <div class="summary-card">
+          <div class="label">Period Return (TWRR)</div>
+          <div class="value positive">+12.44%</div>
+        </div>
+        <div class="summary-card">
+          <div class="label">VTI (Total Market) Return</div>
+          <div class="value positive">+5.64%</div>
+        </div>
+      </div>
+      
+      <div class="performance-bars">
+        <div class="performance-bar">
+          <span class="label">Portfolio</span>
+          <div class="bar-container">
+            <div class="bar portfolio" style="width: 24.8893142704%"></div>
+          </div>
+          <span class="value positive">+12.44%</span>
+        </div>
+        <div class="performance-bar">
+          <span class="label">VTI</span>
+          <div class="bar-container">
+            <div class="bar benchmark" style="width: 11.274028395637165%"></div>
+          </div>
+          <span class="value positive">+5.64%</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Holdings Breakdown -->
+    <section class="section">
+      <h2 class="section-title">Holdings at Period End</h2>
+      
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Symbol</th>
+              <th class="text-right">Shares</th>
+              <th class="text-right">Price</th>
+              <th class="text-right">Market Value</th>
+              <th class="text-right">Allocation</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td class="mono">META</td>
+                <td class="text-right mono">26</td>
+                <td class="text-right mono">$572.44</td>
+                <td class="text-right mono">$14,883.44</td>
+                <td class="text-right mono">38.6%</td>
+              </tr>
+            
+              <tr>
+                <td class="mono">PYPL</td>
+                <td class="text-right mono">80.961</td>
+                <td class="text-right mono">$78.03</td>
+                <td class="text-right mono">$6,317.39</td>
+                <td class="text-right mono">16.4%</td>
+              </tr>
+            
+              <tr>
+                <td class="mono">TSLA</td>
+                <td class="text-right mono">22.168</td>
+                <td class="text-right mono">$261.63</td>
+                <td class="text-right mono">$5,799.81</td>
+                <td class="text-right mono">15.0%</td>
+              </tr>
+            
+              <tr>
+                <td class="mono">TXRH</td>
+                <td class="text-right mono">22</td>
+                <td class="text-right mono">$176.60</td>
+                <td class="text-right mono">$3,885.20</td>
+                <td class="text-right mono">10.1%</td>
+              </tr>
+            
+              <tr>
+                <td class="mono">AMZN</td>
+                <td class="text-right mono">20.3</td>
+                <td class="text-right mono">$186.33</td>
+                <td class="text-right mono">$3,782.50</td>
+                <td class="text-right mono">9.8%</td>
+              </tr>
+            
+              <tr>
+                <td class="mono">GOOGL</td>
+                <td class="text-right mono">13</td>
+                <td class="text-right mono">$165.85</td>
+                <td class="text-right mono">$2,156.05</td>
+                <td class="text-right mono">5.6%</td>
+              </tr>
+            
+              <tr>
+                <td class="mono">CRM</td>
+                <td class="text-right mono">4</td>
+                <td class="text-right mono">$273.71</td>
+                <td class="text-right mono">$1,094.84</td>
+                <td class="text-right mono">2.8%</td>
+              </tr>
+            
+              <tr>
+                <td class="mono">NKE</td>
+                <td class="text-right mono">5</td>
+                <td class="text-right mono">$88.40</td>
+                <td class="text-right mono">$442.00</td>
+                <td class="text-right mono">1.1%</td>
+              </tr>
+            
+              <tr>
+                <td class="mono">CELH</td>
+                <td class="text-right mono">7</td>
+                <td class="text-right mono">$31.36</td>
+                <td class="text-right mono">$219.52</td>
+                <td class="text-right mono">0.6%</td>
+              </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </section>
+    
+    
+    <!-- Top Gainers & Losers -->
+    <section class="section">
+      <h2 class="section-title">Top Gainers & Losers</h2>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="3" style="text-align: center; color: var(--accent-success);">Top Gainers</th>
+              </tr>
+              <tr>
+                <th>Symbol</th>
+                <th class="text-right">Gain</th>
+                <th class="text-right">%</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td class="mono">PYPL</td>
+                  <td class="text-right mono positive">$1,824.22</td>
+                  <td class="text-right mono positive">+40.60%</td>
+                </tr>
+              
+                <tr>
+                  <td class="mono">META</td>
+                  <td class="text-right mono positive">$1,761.76</td>
+                  <td class="text-right mono positive">+13.43%</td>
+                </tr>
+              
+                <tr>
+                  <td class="mono">TSLA</td>
+                  <td class="text-right mono positive">$1,257.18</td>
+                  <td class="text-right mono positive">+27.68%</td>
+                </tr>
+              
+                <tr>
+                  <td class="mono">TXRH</td>
+                  <td class="text-right mono positive">$137.28</td>
+                  <td class="text-right mono positive">+3.66%</td>
+                </tr>
+              
+                <tr>
+                  <td class="mono">GOOGL</td>
+                  <td class="text-right mono positive">$51.66</td>
+                  <td class="text-right mono positive">+2.45%</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="3" style="text-align: center; color: var(--accent-danger);">Top Losers</th>
+              </tr>
+              <tr>
+                <th>Symbol</th>
+                <th class="text-right">Loss</th>
+                <th class="text-right">%</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+                <tr>
+                  <td class="mono">AMZN</td>
+                  <td class="text-right mono negative">-$220.66</td>
+                  <td class="text-right mono negative">-5.51%</td>
+                </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    
+    
+    <!-- Transaction Activity -->
+    <section class="section">
+      <h2 class="section-title">Transaction Activity</h2>
+      
+      <div class="transaction-summary">
+        <div class="transaction-stat">
+          <div class="type">Purchases</div>
+          <div class="amount negative">$0.00</div>
+          <div class="count">0 transactions</div>
+        </div>
+        <div class="transaction-stat">
+          <div class="type">Sales</div>
+          <div class="amount positive">$0.00</div>
+          <div class="count">0 transactions</div>
+        </div>
+        <div class="transaction-stat">
+          <div class="type">Dividends</div>
+          <div class="amount positive">$0.00</div>
+          <div class="count">0 payments</div>
+        </div>
+        <div class="transaction-stat">
+          <div class="type">Deposits</div>
+          <div class="amount positive">$0.00</div>
+          <div class="count">0 deposits</div>
+        </div>
+        <div class="transaction-stat">
+          <div class="type">Withdrawals</div>
+          <div class="amount negative">$0.00</div>
+          <div class="count">0 withdrawals</div>
+        </div>
+      </div>
+      
+      <p style="color: var(--text-muted);">No transactions during this period.</p>
+    </section>
+    
+    
+    <!-- Investment Thesis -->
+    <section class="section">
+      <h2 class="section-title">Investment Thesis</h2>
+      
+      <div class="thesis-grid">
+        
+            <div class="thesis-card">
+              <div class="symbol">META</div>
+              <div class="updated">Last updated: December 1, 2025</div>
+              <div class="content">Meta Platforms represents a compelling investment opportunity as the dominant player in social media with Facebook, Instagram, and WhatsApp reaching over 3 billion daily active users. The company's aggressive pivot to AI and efficiency has dramatically improved margins, with 2024 being dubbed the 'Year of Efficiency.'</div>
+            </div>
+          
+            <div class="thesis-card">
+              <div class="symbol">PYPL</div>
+              <div class="updated">Last updated: December 10, 2025</div>
+              <div class="content">PayPal is undergoing a turnaround under new leadership, focusing on profitable growth over market share at any cost. The Braintree business provides processing for major merchants, while Venmo has significant untapped monetization potential.</div>
+            </div>
+          
+            <div class="thesis-card">
+              <div class="symbol">TXRH</div>
+              <div class="updated">Last updated: September 15, 2025</div>
+              <div class="content">Texas Roadhouse is a best-in-class casual dining operator with a unique culture and operational excellence. The company consistently takes market share from competitors while maintaining industry-leading unit economics.</div>
+            </div>
+          
+            <div class="thesis-card">
+              <div class="symbol">AMZN</div>
+              <div class="updated">Last updated: October 20, 2025</div>
+              <div class="content">Amazon Web Services (AWS) remains the crown jewel, generating the majority of operating income with a dominant position in cloud computing. The retail business has reached a scale that competitors cannot match, with logistics infrastructure that would cost hundreds of billions to replicate.</div>
+            </div>
+          
+            <div class="thesis-card">
+              <div class="symbol">GOOGL</div>
+              <div class="updated">Last updated: November 15, 2025</div>
+              <div class="content">Alphabet remains the dominant force in digital advertising through Google Search and YouTube, with an unassailable moat in search. The company's AI capabilities, particularly Gemini, position it well for the next computing paradigm shift.</div>
+            </div>
+          
+      </div>
+    </section>
+    
+    
+    <footer class="report-footer">
+      <p>Growth Portfolio Report • Generated on January 10, 2026</p>
+      <p style="margin-top: 4px;">This report is for informational purposes only and does not constitute financial advice.</p>
+    </footer>
+  </div>
+</body>
+</html>

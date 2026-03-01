@@ -1,0 +1,379 @@
+.summary-view {
+  padding: 24px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Balance Card */
+.balance-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-amount {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.balance-change {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.balance-change.positive {
+  color: var(--accent-green);
+}
+
+.balance-change.negative {
+  color: var(--accent-red);
+}
+
+.change-label {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.chart-footer {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.period-return {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.period-return.positive {
+  color: var(--accent-green);
+}
+
+.period-return.negative {
+  color: var(--accent-red);
+}
+
+.period-selector {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+.period-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.period-btn:hover {
+  background-color: var(--bg-card-hover);
+  color: var(--text-primary);
+}
+
+.period-btn.active {
+  background-color: var(--fidelity-green);
+  color: white;
+}
+
+.available-funds {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+}
+
+.fund-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.fund-value {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.view-performance {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--accent-blue);
+}
+
+/* VTI Comparison Toggle */
+.vti-comparison-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 8px;
+  background: var(--bg-card-hover);
+  border-radius: 6px;
+}
+
+.vti-comparison-toggle label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--text-secondary);
+  user-select: none;
+}
+
+.vti-comparison-toggle input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #5c6bc0;
+  cursor: pointer;
+}
+
+.vti-comparison-toggle label:hover {
+  color: var(--text-primary);
+}
+
+.vti-info-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--text-muted);
+  cursor: help;
+}
+
+.vti-comparison-stats {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+  font-size: 11px;
+}
+
+.vti-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.vti-stat-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.vti-stat-dot.portfolio {
+  background-color: var(--accent-green);
+}
+
+.vti-stat-dot.vti {
+  background-color: #5c6bc0;
+}
+
+.vti-stat-label {
+  color: var(--text-muted);
+}
+
+.vti-stat-value {
+  font-weight: 500;
+}
+
+.vti-stat-value.positive {
+  color: var(--accent-green);
+}
+
+.vti-stat-value.negative {
+  color: var(--accent-red);
+}
+
+/* Performance Card */
+.performance-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.perf-date {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.performance-list {
+  margin-top: 16px;
+  flex: 1;
+}
+
+.perf-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.perf-row:last-child {
+  border-bottom: none;
+}
+
+.perf-name {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.perf-value {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.perf-value.positive {
+  color: var(--accent-green);
+}
+
+.perf-value.negative {
+  color: var(--accent-red);
+}
+
+.perf-period {
+  margin-top: auto;
+  padding-top: 16px;
+}
+
+.see-details {
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--accent-blue);
+}
+
+/* Allocation Card */
+.allocation-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.alloc-date {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Info Button */
+.info-btn {
+  padding: 4px;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.info-btn:hover {
+  color: var(--text-primary);
+}
+
+/* Events Card */
+.events-card {
+  margin-bottom: 20px;
+}
+
+.events-empty {
+  padding: 24px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* Movers Card */
+.movers-card {
+  margin-bottom: 20px;
+}
+
+.movers-table {
+  margin-top: 16px;
+}
+
+.movers-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 8px 0;
+  font-size: 12px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mover-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 12px 0;
+  font-size: 13px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.mover-row:last-child {
+  border-bottom: none;
+}
+
+.mover-symbol {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.mover-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.mover-dot.up {
+  background-color: var(--accent-green);
+}
+
+.mover-dot.down {
+  background-color: var(--accent-red);
+}
+
+.mover-change {
+  font-weight: 500;
+}
+
+.mover-row.positive .mover-change {
+  color: var(--accent-green);
+}
+
+.mover-row.negative .mover-change {
+  color: var(--accent-red);
+}
+
+.mover-price {
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .summary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

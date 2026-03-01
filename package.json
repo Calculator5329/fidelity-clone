@@ -1,0 +1,45 @@
+{
+  "name": "fidelity-clone",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "data:holdings": "npx tsx scripts/generateDailyHoldings.ts",
+    "data:prices": "npx tsx scripts/fetchDailyPrices.ts",
+    "data:values": "npx tsx scripts/calculatePortfolioValues.ts",
+    "data:all": "npm run data:holdings && npm run data:prices && npm run data:values",
+    "data:merge": "npx tsx scripts/mergeData.ts --migrate",
+    "data:import": "npx tsx scripts/importFidelityCSV.ts",
+    "data:export": "npx tsx scripts/exportTransactionsCSV.ts",
+    "data:snapshots": "npx tsx scripts/generateDailySnapshots.ts",
+    "data:fix-transactions": "npx tsx scripts/fixSwappedTransactions.ts",
+    "reports:generate": "npx tsx scripts/generateReports.ts"
+  },
+  "dependencies": {
+    "@types/papaparse": "^5.5.2",
+    "papaparse": "^5.5.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "recharts": "^3.6.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react-swc": "^4.2.2",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "tsx": "^4.21.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4",
+    "yahoo-finance2": "^3.11.2"
+  }
+}
